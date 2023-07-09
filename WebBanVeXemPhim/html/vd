@@ -1,0 +1,46 @@
+[
+ {
+  "tenPhim": "Nhà Bà Nữ",
+  "thongTinCoBan": "Drama VietNam (102 phút)",
+  "theLoai": " 2D | Normal | Normal sound | Lồng tiếng",
+  "img": "img 1",
+  "xepHang": 8.2,
+  "ngayPhatHanh": "22/02/2023",
+  "thoiLuong": "120P",
+  "tomTatPhim": "Nhà bà Nữ là một bộ phim điện ảnh chính kịch, gia đình do Trấn Thành sản xuất và làm đạo diễn. Bộ phim do Đỗ Hoàng Vũ, quản lý của Trấn Thành và Hari Won đảm nhận vai trò đồng sản xuất.",
+  "id": "1"
+ },
+ {
+  "tenPhim": "Chị Chị Em Em",
+  "thongTinCoBan": "Drama Vietnam (115Phút)",
+  "theLoai": "2D | Normal | Normal sound | Lồng tiếng",
+  "img": "img 2",
+  "xepHang": 8.8,
+  "ngayPhatHanh": "22/01/2023",
+  "thoiLuong": "115P",
+  "tomTatPhim": "Chị Chị Em Em 2 là dự án được mong chờ bậc nhất trong dịp Tết Nguyên Đán 2023 với sự tham gia của hai người đẹp đình đám showbiz Việt là Minh Hằng và Ngọc Trinh. Lấy cảm hứng từ cuộc đời hai đại mỹ nhân Sài thành thập niên 1930s là Ba Trà và Tư Nhị, Chị Chị Em Em 2 hứa hẹn là bữa tiệc nhan sắc ấn tượng trên màn ảnh, mở ra một năm mới với nhiều dấu ấn của làng phim Việt.",
+  "id": "2"
+ },
+ {
+  "tenPhim": "Muốn Gặp Anh",
+  "thongTinCoBan": "melodramatic/love/Romance Australia&Others (107Phút)",
+  "theLoai": "2D | Normal | Normal sound | Phụ đề",
+  "img": "img 3",
+  "xepHang": 0,
+  "ngayPhatHanh": "10/02/2023",
+  "thoiLuong": "107P",
+  "tomTatPhim": "Sau thành công vang dội khắp Châu Á năm 2019, Muốn Gặp Anh - phiên bản điện ảnh với câu chuyện tình yêu vượt cả không gian và thời gian hoàn toàn mới mẻ sẽ ra mắt trên màn ảnh rộng. Liệu rằng Hoàng Vũ Huyên và Lý Tử Duy có thể thay đổi số phận mỗi khi giai điệu bài hát Last Dance vang lên?",
+  "id": "3"
+ },
+ {
+  "tenPhim": "Vong Nhi",
+  "thongTinCoBan": "Thriller/Criminal/Horror Vietnam (117Phút)",
+  "theLoai": "2D | Normal | Normal sound | Lồng tiếng",
+  "img": "img 4",
+  "xepHang": 0,
+  "ngayPhatHanh": "03/02/2023",
+  "thoiLuong": "117P",
+  "tomTatPhim": "Bộ phim kể về cặp đôi Tùng - Thảo và những điều kỳ lạ xảy ra trong căn nhà của họ. Sau 4 năm kết hôn, Thảo đã mang thai đứa con đầu lòng những cô luôn bị hành hạ bởi những gì đó không rõ ràng và đầy ám ảnh. Bí mật của câu chuyện sẽ được hé lộ liên quan đến sai lầm những của tuổi trẻ…",
+  "id": "4"
+ }
+]

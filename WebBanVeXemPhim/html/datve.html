@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/datve.css" />
+    <title>Đặt chỗ xem phim</title>
+    <script src="https://kit.fontawesome.com/35a8b342cd.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- book tickets -->
+    <div class="movie-container">
+      <label>Chọn phim: </label>
+      <select id="movie">
+        <option value="110">Nhà Bà Nữ</option>
+        <option value="120">Chị Chị Em Em</option>
+        <option value="100">Vong Nhi</option>
+        <option value="90">Mèo Béo Siêu Đẳng</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Còn trống</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Đã Chọn</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Đã bán</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row1">
+        <div class="seat"></div>
+        <div class="seat" style="margin-right: 3px;"></div>
+        <div class="seat sold" style="margin-left: 3px;"></div>
+        <div class="seat"></div>
+      </div>
+
+    </div>
+
+    <p class="text">
+        Bạn đã chọn <span id="count">0</span> tổng tiền thanh toán là : 
+        <span id="total">0</span >
+    </p>
+    <script src="/js/datve.js"></script>
+
+    <div class="pt-5">
+      <h4 class="mb-0">
+        <a href="/html/home.html" class="text-body " style="text-decoration: none; color: white;">
+          <i class="fa-solid fa-house"></i> Trang chủ
+        </a>
+        <a href="" class="text-body " style="text-decoration: none; color: white; margin-left: 40px;">
+          <i class="fa-solid fa-ticket"></i> Thanh toán
+        </a>
+      </h4>
+    </div>
+
+  </body>
+</html>

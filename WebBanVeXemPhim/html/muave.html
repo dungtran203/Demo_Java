@@ -1,0 +1,280 @@
+<html>
+
+    <head>
+        <title> Cinema Ticket </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="https://kit.fontawesome.com/35a8b342cd.js" crossorigin="anonymous"></script>
+        <script src="/js/admin.js"></script>
+        <link rel="stylesheet" href="/css/muave.css">
+    </head>
+    <body class="container mt-3" ng-app="web207" ng-controller="web207-ctrl">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top" style="background: black;">
+            <!-- Container wrapper -->
+                <div class="container">
+
+                <!-- Navbar brand -->
+                    <a class="navbar-brand" href="index.html" style="padding-left: 60px;"> 
+                        <img src="data:image/png;base64,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"
+                            height="25px" alt="logo" />
+                    </a>
+            
+                <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse" id="navbarButtonsExample" style="color: #fff;">
+
+                        <!-- Left links -->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item d-flex"> 
+                                <a class="nav-link" href="/html/muave.html" style="color: #fff;"> Mua Vé </a>
+                                <a class="nav-link" href="/html/home.html" style="color: #fff;"> Phim </a>
+                                <a class="nav-link" href="#" style="color: #fff;"> Rạp Chiếu Phim </a>
+                                <a class="nav-link" href="#" style="color: #fff;"> Khuyến mãi </a>
+                            </li>
+                        </ul>
+
+                        <!-- icon -->
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-user"> <samp style="font-family: Time New Roman;"> Your Account </samp></i>
+                            </a>
+                            <ul class="dropdown-menu bg-light">
+                                <li><a class="dropdown-item" href="" style="color: black;">Đăng nhập/Đăng Ký</a></li>
+                                <li><a class="dropdown-item" href="#" style="color: black;">Thẻ thành viên</a></li>
+                                <li><a class="dropdown-item" href="#" style="color: black;">Hỗ trợ khách hàng</a></li>
+                                <li><a class="dropdown-item" href="./admin.html" style="color: black;">Admin</a></li>
+                            </ul>
+                        </div>
+                                                
+                    </div>
+                <!-- Collapsible wrapper -->
+
+            </div>
+            <!-- Container wrapper -->
+            </nav>
+        <!-- Navbar -->
+        <!-- search -->
+        <div class="container1 d-flex">
+            <div class="d-flex input-group w-auto">
+                <input type="search" class="form-control" placeholder="Tìm kiếm tên phim" aria-label="Search" ng-model = "tenPhim"/>
+                <button class="btn btn-outline-dark" type="button" ng-click = "tim(tenPhim)" data-mdb-ripple-color="dark">
+                    Search
+                </button>
+            </div>
+        
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Thành Phố
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Hà Nội</a></li>
+                    <li><a class="dropdown-item" href="#">Hồ Chí Minh</a></li>
+                    <li><a class="dropdown-item" href="#">Hưng Yên</a></li>
+                    <li><a class="dropdown-item" href="#">Đà Nẵng</a></li>
+                    <li><a class="dropdown-item" href="#">Hải Dương</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Giờ 
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#"> 06.00 </a></li>
+                    <li><a class="dropdown-item" href="#"> 07.00 </a></li>
+                    <li><a class="dropdown-item" href="#"> 08.00 </a></li>
+                    <li><a class="dropdown-item" href="#"> 09.00 </a></li>
+                    <li><a class="dropdown-item" href="#"> 10.00 </a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Ngày 
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#"> 6 / 2 / 2023 </a></li>
+                    <li><a class="dropdown-item" href="#"> 7 / 2 / 2023 </a></li>
+                    <li><a class="dropdown-item" href="#"> 8 / 2 / 2023 </a></li>
+                    <li><a class="dropdown-item" href="#"> 9 / 2 / 2023 </a></li>
+                    <li><a class="dropdown-item" href="#"> 10 / 2 / 2023 </a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Thể Loại  
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#"> Kinh Dị </a></li>
+                    <li><a class="dropdown-item" href="#"> Hành Động </a></li>
+                    <li><a class="dropdown-item" href="#"> Hài Hước </a></li>
+                </ul>
+            </div>
+
+            <button class="btn btn-dark" style="height: 40px; margin-top: 15px; margin-left: 20px;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+        <!-- product -->
+        <div class="container pb-5 mb-sm-1">
+            <!-- Categories grid-->
+              <div class="row" >
+                  <!-- Category-->
+                  <div class="col-md-4 col-sm-6" ng-repeat="product in products">
+                      <div class="card border-0 mb-grid-gutter">
+                          <a class="card-img-tiles" href="">
+                              <div class="main-img">
+                                      <img width = "227px" height = "232px" src=" {{ product.img }} " />
+                              </div>
+                              <div class="thumblist">
+                                      <img width = "109px" height = "111px" src=" {{ product.img }} " />
+                                      <img width = "109px" height = "111px" src=" {{ product.img }} " />
+                              </div>
+                          </a>
+                          <div class="card-body border mt-n1 py-4 text-center">
+                              <h2 class="h5 mb-1"> {{ product.tenPhim }} </h2>
+                              <span class="d-block mb-3 font-size-xs text-muted"> {{ product.thoiLuong }} | {{ product.ngayPhatHanh }} </span>
+                              <a class="btn btn-pill btn-outline-dark btn-sm" href="/html/datve.html"> Đặt vé </a>
+                              <a class="btn btn-pill btn-outline-dark btn-sm" ng-click = "getProduct(product.id)" data-bs-toggle="modal" data-bs-target="#myModalDetail">Xem Chi Tiết</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- The Modal Detail -->
+        <div class="modal" id="myModalDetail">
+            <div class="modal-dialog">
+                <div class="modal-content">
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"> {{ selectedProduct.tenPhim }} </h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <img height="250px" width="260px" src=" {{ selectedProduct.img }} " />
+                        <hr>
+                        <h6 class=""> Id : {{ selectedProduct. id }} </h6>
+                        <h6 class=""> Tên phim : {{ selectedProduct. tenPhim }} </h6>
+                        <h6 class=""> Thông tin cơ bản : {{ selectedProduct. thongTinCoBan }} </h6>
+                        <h6 class=""> Thể loại : {{ selectedProduct. theLoai }} </h6>
+                        <h6 class=""> Xếp hạng : {{ selectedProduct. xepHang }} </h6>
+                        <h6 class=""> Ngày phát hành : {{ selectedProduct. ngayPhatHanh }} </h6>
+                        <h6 class=""> Thời lượng : {{ selectedProduct. thoiLuong }} </h6>
+                        <h6 class=""> Tóm tắt phim : {{ selectedProduct. tomTatPhim }} </h6>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Đóng </button>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+
+        <ul class="pagination" style="padding-left: 400px;">
+            <li class="page-item"><a class="page-link" href="#"> Lùi lại </a></li>
+            <li class="page-item" ng-repeat="ranges in pageRange()" >
+                <a class="page-link" ng-click="getSP(ranges)"> {{ ranges }} </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#"> Tiếp </a></li>
+        </ul>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-facebook-f"></i
+                    ></a>
+            
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-google"></i
+                    ></a>
+            
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-github"></i
+                    ></a>
+                </section>
+                <!-- Section: Social media -->
+            
+                <!-- Section: Form -->
+                <section class="">
+                    <form action="">
+                        <!--Grid row-->
+                        <div class="row d-flex justify-content-center">
+                            <!--Grid column-->
+                            <div class="col-auto">
+                                <p class="pt-2">
+                                    <strong>Đăng kí nhận tin tức của chúng tôi </strong>
+                                </p>
+                            </div>
+                            <!--Grid column-->
+                
+                            <!--Grid column-->
+                            <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                                <div class="form-outline form-white mb-4">
+                                    <input type="email" id="form5Example21" class="form-control" />
+                                    <label class="form-label" for="form5Example21">Địa chỉ email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+                
+                            <!--Grid column-->
+                            <div class="col-auto">
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-outline-light mb-4">
+                                    Xác nhận
+                                </button>
+                            </div>
+                            <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                    </form>
+                </section>
+            <!-- Section: Form -->
+        
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Bản thân công ty là một công ty rất thành công. Giữa chúng có sự phân biệt,
+                     người ấy tìm cách thỏa mãn những thú vui, vì thuận tiện mà sinh ra vì người
+                     ấy được gọi là kẻ tham nhũng lớn trong những thú vui này, để chạy theo một thú vui nào đó.
+                </p>
+            </section>
+            <!-- Section: Text -->
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023 Copyright:
+                <a class="text-white" href="">dungttmph25136@fpt.edu.vn</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </body>
+</html>
